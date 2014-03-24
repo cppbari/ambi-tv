@@ -77,7 +77,7 @@ ambitv_hawk_light_processor_update_sink(
          f = CONSTRAIN((x / 1024.0 + y / 1024.0) / 2.0, 0.0, 1.0);
          f = fmod(f + hawk->offset, 1.0);
          w = 1.0 + sin(map(f, 0.0, 1.0, 0.0, 4.0*3.14159));
-         w = map(w, 0.0, 2.0, 0.3, 0.75);
+         w = map(w, 0.0, 2.0, 0.3, 0.7);
          
          //ambitv_hsl_to_rgb(255 * f, 255, 128, &r, &g, &b);
          ambitv_hsl_to_rgb(255 * w, 255, 128, &r, &g, &b);

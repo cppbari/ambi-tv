@@ -30,4 +30,7 @@ ambitv_util_append_ptr_to_list(void*** list_ptr, int idx, int* len_ptr, void* pt
 int
 ambitv_parse_led_string(const char* str, int** out_ptr, int* out_len);
 
+float
+map(float x, float in_min, float in_max, float out_min, float out_max);
+
 #endif // __AMBITV_UTIL_H__
